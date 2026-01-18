@@ -6,28 +6,28 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="MOTION-GUIDED SEMANTIC ALIGNMENT WITH NEGATIVE PROMPTS FOR ZERO-SHOT VIDEO ACTION RECOGNITION">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="We enhance CLIP for zero-shot action recognition using disentangled motion and semantic alignment, consistently outperforming state-of-the-art benchmarks.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="video action recognition, zero-shot, vision-language models, CLIP, prompt tuning, temporal modeling, cross-attention">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Yiming Wang, Frederick W. B. Li, Jingyun Wang">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Department of Computer Science, Durham University">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="MOTION-GUIDED SEMANTIC ALIGNMENT WITH NEGATIVE PROMPTS FOR ZERO-SHOT VIDEO ACTION RECOGNITION">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="We enhance CLIP for zero-shot action recognition using disentangled motion and semantic alignment, consistently outperforming state-of-the-art benchmarks.">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://github.com/michaelwang66/project">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image" content="https://github.com/michaelwang66/project/static/images/pipeline.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
@@ -286,7 +286,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/michaelwang66" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -314,24 +314,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -341,7 +323,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Zero-shot action recognition is challenging due to the semantic gap between seen and unseen classes. We present a novel framework that enhances CLIP with disentangled embeddings and semantic-guided interaction. A Motion Separation Module (MSM) separates motion-sensitive and global-static features, while a Motion Aggregation Block (MAB) employs gated cross-attention to refine motion representation without re-coupling redundant information. To facilitate generalization to unseen categories, we enforce semantic alignment between video features and textual representations by aligning projected embeddings with positive textual prompts, while leveraging negative prompts to explicitly model “non-class” semantics. Experiments on standard benchmarks demonstrate that our method consistently outperforms prior CLIP-based approaches, achieving robust zero-shot action recognition across both coarse and fine-grained datasets.
           </p>
         </div>
       </div>
@@ -358,7 +340,7 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/results1.jpg" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           First image description.
@@ -366,91 +348,43 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/results2.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/results3.jpg" alt="First ablation study result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/results4.jpg" alt="second ablation study result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
     </div>
-  </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/attmap.jpg" alt="attention map visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/tsne.jpg" alt="t-sne visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
 
 
 <!-- Paper poster -->
